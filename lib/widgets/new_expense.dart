@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+// import 'package:http/http.dart' as http;
+// import 'dart:convert';
 
 import 'package:expense_tracker/models/expense.dart';
 
@@ -56,6 +58,20 @@ class _NewExpenseState extends State<NewExpense> {
           ],
         ),
       );
+
+      // final url = Uri.https('testing-flutter-ab4ed-default-rtdb.firebaseio.com',
+      //     'expenses-tracking.json');
+      // http.post(url,
+      //     headers: {
+      //       'Content-Type': 'application/json',
+      //     },
+      //     body: json.encode({
+      //       'title': _titleController.text,
+      //       'amount': enteredAmount,
+      //       'date': _selectedDate!,
+      //       'category': _selectedCategory,
+      //     }));
+
       return;
     }
 
@@ -67,6 +83,7 @@ class _NewExpenseState extends State<NewExpense> {
         category: _selectedCategory,
       ),
     );
+
     Navigator.pop(context);
   }
 

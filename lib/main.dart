@@ -57,8 +57,7 @@ void main() {
                 fontSize: 16,
               ),
             ),
-      ),
-      debugShowCheckedModeBanner: false,
+      ),debugShowCheckedModeBanner: false,
       // themeMode: ThemeMode.system, // default
       home: const Expenses(),
     ),
